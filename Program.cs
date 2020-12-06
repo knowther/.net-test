@@ -32,11 +32,11 @@ namespace revisao
                      Console.WriteLine("Deseja registrar outro aluno? S/N?");
                      string refazerCad = Console.ReadLine();
                     if(refazerCad.ToUpper() != "S"){
-                        ObterOpcaoUser();
+                       break;
                     }else{
                         continue;
                     }
-                        break;
+
                     case "2":
                     foreach(var student in alunos){
                         if(!string.IsNullOrEmpty(student.Nome)){
